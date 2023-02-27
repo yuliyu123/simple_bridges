@@ -10,9 +10,9 @@ const providerEth = new ethers.providers.WebSocketProvider(
     "wss://eth-goerli.g.alchemy.com/v2/-xJhTJIuMhZ1dtPqlYsqSiE4HyUZz5Md"
 );
 
-// https://etherscan.io/address/0xA5445C3e55d76DD9E030d3971031E8c0124DEe3e
+// https://goerli.etherscan.io/address/0xa5445c3e55d76dd9e030d3971031e8c0124dee3e
 const bridgeEth = new ethers.Contract(
-    "0xA5445C3e55d76DD9E030d3971031E8c0124DEe3e",
+    "0xa5445c3e55d76dd9e030d3971031e8c0124dee3e",
     BridgeIn.abi,
     providerEth
 );
@@ -25,9 +25,9 @@ const adminWalletBsc = new ethers.Wallet(
     providerBsc
 );
 
-// 
+// https://testnet.bscscan.com/address/0xae4cba8fa39413f0ff0bc58b42188f93485120fb
 const bridgeBsc = new ethers.Contract(
-    "0x69975B1d1FC09c8bcc142efBfaf7F29199d499f5",
+    "0xae4cba8fa39413f0ff0bc58b42188f93485120fb",
     BridgeOut.abi,
     adminWalletBsc
 );
