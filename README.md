@@ -1,7 +1,9 @@
 
 ## description
 
-Template for forge and hardhat.
+A simple cross bridge between ETH and BSC, use `lock and mint` startegy.
+
+Including a simple backend written by ts to trigger transfer event from ETH to BSC.
 
 ## install
 
@@ -9,16 +11,12 @@ Template for forge and hardhat.
 
 `forge install`
 
-## test
+## deploy
 
-compile: `npm run compile`
+`npx hardhat run scripts/deploy.js`
 
-run all ts cases: `npm run test`
+## run
 
-run forge test cases: `forge test`
+`npx hardhat run scripts/eth_bsc_bridges.js`
 
-run single case: `npx hardhat test test/ts/arb.t.ts --grep "Get all tokens permations"`
-
-# run
-
-`npm run start`
+trigger transfer event from eth to bsc
